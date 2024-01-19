@@ -17,16 +17,25 @@
 $(call inherit-product, device/motorola/ali/device.mk)
 
 # Inherit some common Pixel Experience stuff.
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+$(call inherit-product, vendor/kizashi/config/common_full_phone.mk)
 TARGET_INCLUDE_LIVE_WALLPAPERS := false
 TARGET_BOOT_ANIMATION_RES := 1080
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_BRAND := motorola
 PRODUCT_MANUFACTURER := motorola
-PRODUCT_NAME := aosp_ali
+PRODUCT_NAME := kizashi_ali
 PRODUCT_DEVICE := ali
 PRODUCT_MODEL := moto g(6)
+
+# Kizashi flags
+LINEAGE_BUILDTYPE := OFFICIAL
+KIZASHI_BUILD_TYPE := gapps
+TARGET_GAPPS_ARCH := arm64
+TARGET_FACE_UNLOCK_SUPPORTED := true
+KIZASHI_SHIP_ADAWAY := true
+#Gcam GO
+KIZASHI_INCLUDE_GCGOP := true
 
 # Build Fingerprint
 PRODUCT_BUILD_PROP_OVERRIDES += \
