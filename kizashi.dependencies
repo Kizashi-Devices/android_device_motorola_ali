@@ -1,15 +1,15 @@
 [
   {
     "remote": "github",
-    "repository": "brunorolak/vendor_motorola_msm8953-common",
+    "repository": "Kizashi-Devices/android_vendor_motorola_msm8953-common",
     "target_path": "vendor/motorola/msm8953-common",
-    "branch": "eleven"
+    "branch": "relay"
   },
   {
     "remote": "github",
-    "repository": "brunorolak/vendor_motorola_ali",
+    "repository": "Kizashi-Devices/androidvendor_motorola_ali",
     "target_path": "vendor/motorola/ali",
-    "branch": "eleven"
+    "branch": "relay"
   },
   {
     "remote": "github",
